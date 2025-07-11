@@ -2,26 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Loading...</title>
+  <title>Click to Watch</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       text-align: center;
       background: #f9f9f9;
-      padding-top: 50px;
-    }
-    #countdown {
-      font-size: 24px;
-      margin-bottom: 20px;
-      background: #ffffcc;
-      display: inline-block;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px #ccc;
-    }
-    #thumbnail {
-      display: none;
-      margin-top: 20px;
+      padding-top: 100px;
     }
     img {
       width: 300px;
@@ -37,28 +24,10 @@
 </head>
 <body>
 
-<div id="countdown">
-  Video is loading... Please wait <span id="time">30</span> seconds!
-</div>
-
-<div id="thumbnail">
-  <a href="https://example.com/redirect-link" target="_blank">
-    <img src="https://imgur.com/a/PoGOjel" alt="Click to continue">
-  </a>
-</div>
-
-<script>
-  let seconds = 30;
-  let countdown = setInterval(() => {
-    seconds--;
-    document.getElementById("time").textContent = seconds;
-    if (seconds <= 0) {
-      clearInterval(countdown);
-      document.getElementById("countdown").style.display = "none";
-      document.getElementById("thumbnail").style.display = "block";
-    }
-  }, 1000);
-</script>
+<!-- ✅ Replace the two URLs below with your image and redirect link -->
+<a href="https://example.com/your-redirect-link" target="_blank">
+  <img src="https://imgur.com/a/PoGOjel" alt="Click to continue">
+</a>
 
 </body>
 </html>
