@@ -1,34 +1,59 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hot Video Online 🔥</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <title>Click to Continue</title>
+  <style>
+    body {
+      background-color: #f4f4f4;
+      text-align: center;
+      padding-top: 100px;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .click-image {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #aaa;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .click-image:hover {
+      transform: scale(1.05);
+    }
+
+    .note {
+      font-size: 18px;
+      margin-top: 40px;
+      color: #444;
+    }
+  </style>
 </head>
 <body>
 
-  <h1 class="title">🔥 Hot Video Gallery 🔥</h1>
+<h2>Click an image to continue</h2>
 
-  <div class="gallery">
-    <div class="video-card" onclick="openVideo('https://www.youtube.com/embed/dQw4w9WgXcQ')">
-      <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Video 1"/>
-      <p>Video 1</p>
-    </div>
-    <div class="video-card" onclick="openVideo('https://www.youtube.com/embed/tgbNymZ7vqY')">
-      <img src="https://img.youtube.com/vi/tgbNymZ7vqY/hqdefault.jpg" alt="Video 2"/>
-      <p>Video 2</p>
-    </div>
-    <!-- আরও ভিডিও চাইলে এখানে বসাও -->
-  </div>
+<div class="container">
+  <!-- Image 1 -->
+  <a href="https://gainedspotsspun.com/h7490t1g?key=d4330eedfb245bfd489eb18a875b6892" target="_blank">
+    <img src="https://i.imgur.com/EAt1Ncq.jpg" alt="Click to continue 1" class="click-image">
+  </a>
 
-  <!-- Overlay Player -->
-  <div id="overlay" class="overlay" onclick="closeVideo()">
-    <div class="video-container">
-      <iframe id="video-frame" src="" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </div>
+  <!-- Image 2 -->
+  <a href="https://example.com/second-link" target="_blank">
+    <img src="https://i.imgur.com/2fCTc9b.jpeg" alt="Click to continue 2" class="click-image">
+  </a>
+</div>
 
-  <script src="script.js"></script>
+<p class="note">Choose any image to proceed.</p>
+
 </body>
 </html>
